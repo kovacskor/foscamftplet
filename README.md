@@ -5,7 +5,7 @@ I have removed the dependency for glassfish and adjusted the logging libs to Apa
 Implementation:
 
 0. Install and configure openhab2
-1. Compile it using the pom file.
+1. Compile FoscamFTPlet using the pom file.
 2. Put the FoscamFTPlet-1.0.jar to apache-ftpserver-1.1.1/common/lib
 3. Edit your ftpd-typical.xml (rename it to f.e.: ftpd-conf.xml). Add the lines:
 	- Into the server tag: xmlns:beans="http://www.springframework.org/schema/beans"
