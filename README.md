@@ -19,7 +19,7 @@ Implementation:
 
 4. Do additional config on FTPD (users, port, etc.)
 5. You may want to start Apache ftpd in daemon mode. I didn't find too much documentation over that I did it the following way:
-	- Edit bin/ftpd.sh change MAIN_CLASS to org.apache.ftpserver.main.Daemon
+	- Edit bin/ftpd.sh change MAIN_CLASS to org.apache.ftpserver.main.Daemon, and insert a "start" word after it for the startup.
 	- Rasbian is now on Stretch version and it uses systemd for init since Jessie, so you need to configure the startup in systemd. If you (like I was) are not familiar with systemd, read a bit about it before progressing.
 	- Create an ftpd.service, put/link it to etc/systemd/system. Register the service: systemctl enable ftpd.service.
 	- Start ftpd
