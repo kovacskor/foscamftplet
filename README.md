@@ -27,6 +27,7 @@ Implementation:
 Your FTP users should be the name of the camera. The login event will trigger a rest call to openhab2 changing the (switch or string motion detection) items to on. The name of the item will be MotionDetector_FTPUSERNAME_Camera.
 
 One sample for my openhab2 items configuration (/etc/openhab2/items/motion_detectors.items):
+
 String MotionDetector_FTPUSERNAME_Camera "Bal kamera Motion detection [%s]" <camera> { expire="30s,state=OFF" }
 
 You may notice the usage of the expire binding above. This sets back the ON state to OFF after 30 secs.
