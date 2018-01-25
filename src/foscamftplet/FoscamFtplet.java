@@ -32,7 +32,7 @@ public class FoscamFtplet extends DefaultFtplet {
 		log.info(cameraName + " logged in");
 		
 		try {
-			  
+			 //rest call to openhab
 			URL url = new URL("http://localhost:8080/rest/items/MotionDetector_" + cameraName + "_Camera");
 			HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 			conn.setDoOutput(true);
